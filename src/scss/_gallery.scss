@@ -1,0 +1,45 @@
+.modal{
+  .modal-body{
+    background: $BG3;
+  }
+  .modal-dialog{
+    margin: 5rem auto;
+  }
+  .modal-header{
+    background: #BCE0FD;
+    display: flex;
+    flex-direction: row;
+    color: $BG1;
+    .main__page__btns button {
+      width: 30px;
+    }
+  }
+
+  .carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .carousel-control-next, .carousel-control-prev{
+      border: 1px solid $BG1;
+      border-radius: 15px;
+      background: white;
+      width: 64px;
+      height: 64px;
+      opacity: 1;
+      color: $BG1;
+    }
+    .figure-caption{
+      border: 2px solid $BG2;
+      border-radius: 5px;
+      width: 40%;
+      padding: 5px 10px;
+      margin-top: 10px;
+      color: $BG1;
+    }
+  }
+}
+
+.carousel-control-next, .carousel-control-prev{
+  top: 30%;
+}
+

@@ -1,0 +1,47 @@
+.main__page{
+  width: 50%;
+  min-height: 35vh;
+  background-color: $BG3;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: $textColorMain;
+  &__logo{
+    width: 30%;
+    background-color: $BG2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+      width: 150px;
+      height: 150px;
+      transform: translate(-70px,0px);
+    }
+  }
+  &__info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 3em;
+  }
+  &__btns{
+    >button{
+      margin: 10px;
+      width: 10em;
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .main__page__logo{
+    display: none;
+  }
+  .main__page{
+    width: 100%;
+  }
+  .main__page__info{
+    width: 100%;
+  }
+}

@@ -1,0 +1,65 @@
+<% var data = {
+  title: "Task",
+  author: "2MD"
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="content">
+  <div class="main__page">
+    <div class="main__page__logo">
+      <img src="../../img/logo.png" alt="logo">
+    </div>
+    <article class="main__page__info">
+      <h1>This is Main Page</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, explicabo consequatur?...
+      </p>
+      <p class="collapse" id="collapseExample">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sed cumque quidem incidunt tenetur iure mollitia, ipsum itaque aliquam ab laudantium fuga neque tempore recusandae? Amet ullam quae error esse facere, placeat vitae illum sunt iste magni nulla est eius perspiciatis. Sunt amet ratione fugit, exercitationem vitae dicta quis nobis explicabo architecto? Fuga minima facere nemo laborum placeat, asperiores culpa.
+      </p>
+      <div class="main__page__btns">
+        <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          More
+        </button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Show gallery
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div>
+                    <h5 class="modal-title" id="exampleModalLabel">Gallery</h5>
+                    <a href="https://picsum.photos/v2/list?limit=10">picsum.photos</a>
+                  </div>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div id="slideContainer" class="carousel-inner">
+                      <!--
+                        slides here
+                      -->
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </article>
+  </div>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
